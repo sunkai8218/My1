@@ -4,36 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".ButtonClick">
-
+    tools:context=".ButtonLongClick"
+    android:orientation="vertical">
     <Button
-        android:id="@+id/btn_click_single"
+        android:id="@+id/btn_click_long_single"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="指定单独的点击监听器"
-        android:gravity="center"
-        android:textColor="#000000"
-        android:textSize="15sp"
-        >
-    </Button>
-    <Button
-        android:id="@+id/btn_click_public"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="指定公共的点击监听器"
+        android:text="指定单独的长按监听器"
         android:gravity="center"
         android:textColor="#000000"
         android:textSize="15sp"
         >
     </Button>
     <TextView
-        android:id="@+id/tv_result"
-        android:gravity="center"
+        android:id="@+id/text_reult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="#000000"
-        android:text="这里查看按钮的点击结果">
+        android:text="">
     </TextView>
 
 </LinearLayout>
