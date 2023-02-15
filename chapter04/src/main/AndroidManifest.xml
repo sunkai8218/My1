@@ -9,21 +9,48 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication1">
         <activity
-            android:name=".FinshActivity"
+            android:name=".Login_SuccessActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
 <!--        <activity-->
-<!--            android:name=".StartActivity"-->
+<!--            android:name=".LoginActivity"-->
 <!--            android:exported="false">-->
 <!--            <meta-data-->
 <!--                android:name="android.app.lib_name"-->
 <!--                android:value="" />-->
 <!--        </activity>-->
+<!--        <activity-->
+<!--            android:name=".JumpSecondActivity"-->
+<!--            android:exported="false">-->
+<!--            <meta-data-->
+<!--                android:name="android.app.lib_name"-->
+<!--                android:value="" />-->
+<!--        </activity> &lt;!&ndash; <activity &ndash;&gt;-->
+        <!-- android:name=".JumpFirstActivity" -->
+        <!-- android:exported="false"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.app.lib_name" -->
+        <!-- android:value="" /> -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name=".FinshActivity" -->
+        <!-- android:exported="false"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.app.lib_name" -->
+        <!-- android:value="" /> -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name=".StartActivity" -->
+        <!-- android:exported="false"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.app.lib_name" -->
+        <!-- android:value="" /> -->
+        <!-- </activity> -->
         <activity
-            android:name=".StartActivity"
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
