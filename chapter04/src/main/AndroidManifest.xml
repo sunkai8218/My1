@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
 
     <application
         android:allowBackup="true"
@@ -8,27 +9,34 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication1">
-        <activity
-            android:name=".Login_SuccessActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
 <!--        <activity-->
-<!--            android:name=".LoginActivity"-->
+<!--            android:name=".ActionUriActivity"-->
 <!--            android:exported="false">-->
 <!--            <meta-data-->
 <!--                android:name="android.app.lib_name"-->
 <!--                android:value="" />-->
 <!--        </activity>-->
 <!--        <activity-->
-<!--            android:name=".JumpSecondActivity"-->
+<!--            android:name=".Login_SuccessActivity"-->
 <!--            android:exported="false">-->
 <!--            <meta-data-->
 <!--                android:name="android.app.lib_name"-->
 <!--                android:value="" />-->
-<!--        </activity> &lt;!&ndash; <activity &ndash;&gt;-->
+<!--        </activity> -->
+        <!-- <activity -->
+        <!-- android:name=".LoginActivity" -->
+        <!-- android:exported="false"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.app.lib_name" -->
+        <!-- android:value="" /> -->
+        <!-- </activity> -->
+        <!-- <activity -->
+        <!-- android:name=".JumpSecondActivity" -->
+        <!-- android:exported="false"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.app.lib_name" -->
+        <!-- android:value="" /> -->
+        <!-- </activity> &lt;!&ndash; <activity &ndash;&gt; -->
         <!-- android:name=".JumpFirstActivity" -->
         <!-- android:exported="false"> -->
         <!-- <meta-data -->
@@ -50,7 +58,7 @@
         <!-- android:value="" /> -->
         <!-- </activity> -->
         <activity
-            android:name=".LoginActivity"
+            android:name=".ActionUriActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -63,5 +71,6 @@
                 android:value="" />
         </activity>
     </application>
+
 
 </manifest>
