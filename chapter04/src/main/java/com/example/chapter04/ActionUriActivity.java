@@ -26,12 +26,24 @@ public class ActionUriActivity extends AppCompatActivity implements View.OnClick
     @Override
     public void onClick(View view) {
         String phoneNumber ="123445";
+        Intent intent = new Intent();
        switch (view.getId()){
+
            case R.id.btn_detail:
-               Intent intent = new Intent();
                intent.setAction(Intent.ACTION_DIAL);
-               Uri uri = Uri.parse("tel"+phoneNumber);
+               Uri uri = Uri.parse("tel:"+phoneNumber);
                intent.setData(uri);
+               startActivity(intent);
+               break;
+           case R.id.btn_email:
+               intent.setAction(Intent.ACTION_SENDTO);
+               Uri uri2 = Uri.parse("sms:"+phoneNumber);
+               intent.setData(uri2);
+               startActivity(intent);
+               break;
+           case  R.id.btn_myActivity:
+               intent.setAction("android.intent.action.NING");
+               intent.addCategory(Intent.CATEGORY_DEFAULT);
                startActivity(intent);
                break;
        }
