@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="first"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutLongLabel="@string/first_long"
+        android:shortcutShortLabel="@string/first_short"
+        >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.example.chapter04"
+            android:targetClass="com.example.chapter04.StartActivity"
+            >
+            <categories android:name="android.shortcut.conversation"></categories>
+
+        </intent>
+    </shortcut>
+    <shortcut
+        android:shortcutId="second"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel = "@string/second_short"
+        android:shortcutLongLabel = "@string/second_long"
+        >
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.example.chapter04"
+            android:targetClass="com.example.chapter04.MetaDataActivity"
+            >
+            <categories android:name="android.shortcut.conversation"></categories>
+        </intent>
+
+    </shortcut>
+
+</shortcuts>
